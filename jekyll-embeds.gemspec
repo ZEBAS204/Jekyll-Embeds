@@ -12,8 +12,7 @@ Gem::Specification.new do |s|
   s.homepage      = "https://github.com/ZEBAS204/Jekyll-Embeds"
   s.license       = "MIT"
 
-  s.files         = ["lib/*"]
-  s.require_paths = ["lib"]
+  s.files         = ["jekyll-embeds.rb"]
 
   s.metadata    = { "documentation_uri" => "https://github.com/ZEBAS204/Jekyll-Embeds/blob/master/README.md#usage" }
 

@@ -1,5 +1,5 @@
 <h1 align="center">Jekyll Embeds</h1>
-<p align="center">This Jekyll pluging allows a tag that takes a URL and generates a html snippet to embed the element into your site.</p>
+<p align="center">This Jekyll pluging allows a tag that takes a URL and generates a html snippet to embed the element into your site<br><br><a href="#"><img src="https://badge.fury.io/rb/jekyll-embeds.svg"/></a> <a href="#"><img src="https://travis-ci.com/ZEBAS204/Jekyll-Embeds.svg?branch=master"/></a> <a href="/LICENSE.md"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103"/></a></p>
 
 
 ## Installation

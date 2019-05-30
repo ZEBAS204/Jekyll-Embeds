@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.version       = "0.0.2"
   s.authors       = ["SEBAS204"]
 
-  s.summary       = %q{jekyll plugin to generate html snippets for embedding Youtube videos, twitch, etc}
-  s.description   = %q{jekyll plugin to generate html snippets for embedding Youtube videos, twitch, etc}
+  s.summary       = %q{Jekyll plugin for embed youtube videos, twitch, etc.}
+  s.description   = %q{jekyll plugin to generate html snippets for embedding youtube videos, twitch, etc.}
   s.homepage      = "https://github.com/ZEBAS204/Jekyll-Embeds"
   s.license       = "MIT"
 

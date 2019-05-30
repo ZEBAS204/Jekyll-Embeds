@@ -1,5 +1,9 @@
 <h1 align="center">Jekyll Embeds</h1>
-<p align="center">This Jekyll pluging allows a tag that takes a URL and generates a html snippet to embed the element into your site<br><br><a href="#"><img src="https://badge.fury.io/rb/jekyll-embeds.svg"/></a> <a href="#"><img src="https://travis-ci.com/ZEBAS204/Jekyll-Embeds.svg?branch=master"/></a> <a href="/LICENSE.md"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103"/></a></p>
+<p align="center">This Jekyll pluging allows a tag that takes a URL and generates a html snippet to embed the element into your site<br><br><a href="#"><img src="https://badge.fury.io/rb/jekyll-embeds.svg"/></a> <a href="#"><img src="https://travis-ci.com/ZEBAS204/Jekyll-Embeds.svg?branch=master"/></a> <a href="/LICENSE"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103"/></a><br>
+<a href="https://rubygems.org/gems/jekyll"><img src="https://img.shields.io/badge/jeykll-%5E3.8-orange.svg"/></a>
+<a href="https://rubygems.org/gems/rake"><img src="https://img.shields.io/badge/rake-%5E1.10-orange.svg"/></a>
+<a href="https://rubygems.org/gems/bundler"><img src="https://img.shields.io/badge/bundler-%5E10.0-orange.svg"/></a>
+</p>
 
 
 ## Installation

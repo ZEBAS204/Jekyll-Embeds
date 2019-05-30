@@ -63,18 +63,24 @@ ___
 # Examples
 
 ### Youtube
+```
 >Input: {% youtube "https://www.youtube.com/watch?v=UbQgXeY_zi4" %}
 
->Output: ```<div class="embed-container"><iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/UbQgXeY_zi4" frameborder="0" allowfullscreen=""></iframe></div>```
+>Output: <div class="embed-container"><iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/UbQgXeY_zi4" frameborder="0" allowfullscreen=""></iframe></div>
+```
 
 
 ### Twitch
+```
 >Input: {% twitch "https://twitch.tv/eleaguetv" %}
 
->Output: ```<div class="embed-container"><iframe src="https://player.twitch.tv/?channel=eleaguetv" frameborder="0" allowfullscreen="true" scrolling="no" autoplay="false" height="390" width="640"></iframe></div>```
+>Output: <div class="embed-container"><iframe src="https://player.twitch.tv/?channel=eleaguetv" frameborder="0" allowfullscreen="true" scrolling="no" autoplay="false" height="390" width="640"></iframe></div>
+```
 
 
 ### Vimeo
+```
 >Input: {% vimeo "https://vimeo.com/177667683" %}
 
->Output: ```<div class="embed-container"><iframe src="https://player.vimeo.com/video/177667683" frameborder="0" allowfullscreen="true" scrolling="no" height="390" width="640"></iframe></div>```
+>Output: <div class="embed-container"><iframe src="https://player.vimeo.com/video/177667683" frameborder="0" allowfullscreen="true" scrolling="no" height="390" width="640"></iframe></div>
+```

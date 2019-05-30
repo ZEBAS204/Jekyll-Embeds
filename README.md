@@ -44,6 +44,7 @@ platform:
 * ``_includes/twitch.html``
 * ``_includes/vimeo.html``
 Inside that partial the platform_ID is available as ``{{ platform_id }}``.
+
 For example ``{{ twitch_id }}``.
 
 

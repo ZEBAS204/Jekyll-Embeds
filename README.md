@@ -44,14 +44,6 @@ platform:
     * tclip (soon)
     * gdrive(soon)
 ```
-**Note:** You can specify your own embed by creating a partial for:
-* ``_includes/youtube.html``
-* ``_includes/twitch.html``
-* ``_includes/vimeo.html``
-Inside that partial the platform_ID is available as ``{{ platform_id }}``.
-
-For example ``{{ twitch_id }}``.
-
 
 **I recomend puts in your css the followin, this will make the look much better**
 

@@ -94,7 +94,7 @@ class SoundCloudEmbed < Liquid::Tag
   end
 
   def render(context)
-    %Q{<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\"  src=\"//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{@items[:id]}&color=%23#{@items[:color]}auto_play=#{@items[:aplay]}&visual=true\"></iframe>}
+    %Q{<div class="embed-container"><iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\"  src=\"//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{@items[:id]}&color=%23#{@items[:color]}auto_play=#{@items[:aplay]}&visual=true\"></iframe></div>}
   end
 
   Liquid::Template.register_tag "soundcloud", self

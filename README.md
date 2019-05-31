@@ -40,7 +40,7 @@ platform:
     * youtube
     * twitch
     * vimeo
-    * soundcloud => {% soundcloud [id]* [color] [true/false]
+    * soundcloud => {% soundcloud [id]* [color] [true/false] %}
     * tclip (soon)
     * gdrive(soon)
 ```

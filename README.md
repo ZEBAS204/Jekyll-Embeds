@@ -40,6 +40,7 @@ platform:
     * youtube
     * twitch
     * vimeo
+    * soundcloud => {% soundcloud [id]* [color] [true/false]
     * tclip (soon)
     * gdrive(soon)
 ```
@@ -79,6 +80,18 @@ ___
 >Input: {% twitch "https://twitch.tv/eleaguetv" %}
 
 >Output: <div class="embed-container"><iframe src="https://player.twitch.tv/?channel=eleaguetv" frameborder="0" allowfullscreen="true" scrolling="no" autoplay="false" height="390" width="640"></iframe></div>
+```
+
+
+### SoundCloud
+```
+>Input: {% soundcloud "195677713" 00ff00 true %}
+Note:
+  * The color need be in HEX without the "#" (def: orange)
+  * The last bool define the autoplay (def: false)
+ !* The color and bool are optional
+
+>Output: <div class="embed-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195677713&amp;color=%2300ff00auto_play=true&amp;visual=true"></iframe></div>
 ```
 
 

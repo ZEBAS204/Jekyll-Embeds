@@ -1,4 +1,5 @@
-require "jekyll"
+require 'jekyll'
+require 'shellwords'
 
 class YouTubeEmbed < Liquid::Tag
 
@@ -82,4 +83,19 @@ class VimeoEmbed < Liquid::Tag
     Liquid::Template.register_tag "vimeo", self
 end
 
-#! Google Drive & Twitch Clips embeds soon... (maybe).
+
+
+class SoundCloudEmbed < Liquid::Tag
+
+  def initialize(tag_name, markup, tokens)
+    super
+    params = Shellwords.shellwords markup
+    @items = { :id => params[0], :color => params[1] || "ff7700", :aplay => params[2] || "false" }
+  end
+
+  def render(context)
+    %Q{<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\"  src=\"//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{@items[:id]}&color=%23#{@items[:color]}auto_play=#{@items[:aplay]}&visual=true\"></iframe>}
+  end
+
+  Liquid::Template.register_tag "soundcloud", self
+end

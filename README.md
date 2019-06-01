@@ -18,12 +18,15 @@ end
 
 And then execute:
 
-    $ bundle
+```console
+$ bundle
+```
 
 
 Alternatively install the gem yourself as:
-
-    $ gem install jekyll-embeds
+```console
+$ gem install jekyll-embeds
+```
 
 and put this in your ``_config.yml`` **(for Jekyll < 3.5.0)**
 
@@ -33,19 +36,19 @@ plugins: [jekyll-embeds]
 
 
 # Usage
-```
+```ooc
 {% platform "url" %}
 
 platform:
     * youtube
     * twitch
     * vimeo
-    * soundcloud => {% soundcloud [id]* [color] [true/false] %}
+    * soundcloud => {% soundcloud "id" [color] [bool] %}
     * tclip (soon)
     * gdrive(soon)
 ```
 
-**I recomend puts in your css the followin, this will make the look much better**
+**I recommend puts in your css the following, this will make the look much better**
 
 ```css
 .embed-container {position: relative;height: 0;overflow: hidden;max-width: 100%;}
@@ -60,7 +63,7 @@ ___
 # Examples
 
 ### Youtube
-```
+```html
 >Input: {% youtube "https://www.youtube.com/watch?v=UbQgXeY_zi4" %}
 
 >Output: <div class="embed-container"><iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/UbQgXeY_zi4" frameborder="0" allowfullscreen=""></iframe></div>
@@ -68,7 +71,7 @@ ___
 
 
 ### Twitch
-```
+```html
 >Input: {% twitch "https://twitch.tv/eleaguetv" %}
 
 >Output: <div class="embed-container"><iframe src="https://player.twitch.tv/?channel=eleaguetv" frameborder="0" allowfullscreen="true" scrolling="no" autoplay="false" height="390" width="640"></iframe></div>
@@ -76,7 +79,7 @@ ___
 
 
 ### SoundCloud
-```
+```html
 >Input: {% soundcloud "195677713" 00ff00 true %}
 Note:
   * The color need be in HEX without the "#" (def: orange)
@@ -88,7 +91,7 @@ Note:
 
 
 ### Vimeo
-```
+```html
 >Input: {% vimeo "https://vimeo.com/177667683" %}
 
 >Output: <div class="embed-container"><iframe src="https://player.vimeo.com/video/177667683" frameborder="0" allowfullscreen="true" scrolling="no" height="390" width="640"></iframe></div>

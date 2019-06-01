@@ -44,7 +44,6 @@ platform:
     * twitch => {% twitch "url/id" [channel/video/clip](def: channel) [bool](autoplay) %}
     * vimeo
     * soundcloud => {% soundcloud "id" [color] [bool](autoplay) %}
-    * tclip (soon)
     * gdrive(soon)
 ```
 

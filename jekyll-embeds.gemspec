@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-embeds"
-  spec.version       = "0.0.6"
+  spec.version       = "0.0.7"
   spec.authors       = ["SEBAS204"]
 
   spec.summary       = %q{Jekyll plugin for embedding diferent media elements.}

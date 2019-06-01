@@ -41,9 +41,9 @@ plugins: [jekyll-embeds]
 
 platform:
     * youtube
-    * twitch
+    * twitch => {% twitch "url/id" [channel/video/clip](def: channel) [bool](autoplay) %}
     * vimeo
-    * soundcloud => {% soundcloud "id" [color] [bool] %}
+    * soundcloud => {% soundcloud "id" [color] [bool](autoplay) %}
     * tclip (soon)
     * gdrive(soon)
 ```
@@ -70,7 +70,7 @@ ___
 ```
 
 
-### Twitch
+### Twitch [[more](#)]
 ```html
 >Input: {% twitch "https://twitch.tv/eleaguetv" %}
 

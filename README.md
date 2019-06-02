@@ -5,6 +5,10 @@
 <a href="https://rubygems.org/gems/bundler"><img src="https://img.shields.io/badge/bundler-%5E10.0-orange.svg"/></a>
 </p>
 
+```yml
+   IMPORTANT: This plugin doesn't work in github-pages for now (needs to be in whitelist)
+```
+<br>
 
 ## Installation
 

@@ -41,14 +41,23 @@ plugins: [jekyll-embeds]
 
 # Usage
 ```ooc
-{% platform "url" %}
+# All [bool] = [true/false] => false (default)
+# In case you want to define it, you need defile the before params.
 
-platform:
-    * youtube
-    * twitch => {% twitch "url/id" [channel/video/clip](def: channel) [bool](autoplay) %}
-    * vimeo
-    * soundcloud => {% soundcloud "id" [color] [bool](autoplay) %}
-    * gdrive(soon)
+# Youtube (no playlists)
+{% youtube [url] % }
+
+# Twitch
+{% twitch [url/id] [type] [bool] %}
+Type => channel(def), video, clip
+
+# Vimeo
+{% vimeo [url] %}
+
+# SoundCloud
+{% soundcloud [id] [color] [bool] %}
+Color => HEX without the '#'
+
 ```
 
 **I recommend puts in your css the following, this will make the look much better**
@@ -63,39 +72,5 @@ ___
 
 
 
-# Examples ([See more](https://zebas204.github.io/Jekyll-Embeds/))
-
-### Youtube
-```html
->Input: {% youtube "https://www.youtube.com/watch?v=UbQgXeY_zi4" %}
-
->Output: <div class="embed-container"><iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/UbQgXeY_zi4" frameborder="0" allowfullscreen=""></iframe></div>
-```
-
-
-### Twitch [[more](https://zebas204.github.io/Jekyll-Embeds/#Twitch)]
-```html
->Input: {% twitch "https://twitch.tv/eleaguetv" %}
-
->Output: <div class="embed-container"><iframe src="https://player.twitch.tv/?channel=eleaguetv" frameborder="0" allowfullscreen="true" scrolling="no" autoplay="false" height="390" width="640"></iframe></div>
-```
-
-
-### SoundCloud
-```html
->Input: {% soundcloud "195677713" 00ff00 true %}
-Note:
-  * The color need be in HEX without the "#" (def: orange)
-  * The last bool define the autoplay (def: false)
- !* The color and bool are optional
-
->Output: <div class="embed-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195677713&amp;color=%2300ff00auto_play=true&amp;visual=true"></iframe></div>
-```
-
-
-### Vimeo
-```html
->Input: {% vimeo "https://vimeo.com/177667683" %}
-
->Output: <div class="embed-container"><iframe src="https://player.vimeo.com/video/177667683" frameborder="0" allowfullscreen="true" scrolling="no" height="390" width="640"></iframe></div>
-```
+# [See all examples here.](https://zebas204.gitlab.io/jekyll-embeds-site)
+### (They are on a page to save space)

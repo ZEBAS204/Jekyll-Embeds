@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://zebas204.github.io/Jekyll-Embeds/">Jekyll Embeds</a></h1>
+<h1 align="center"><a href="https://zebas204.gitlab.io/jekyll-embeds-site/">Jekyll Embeds</a></h1>
 <p align="center">This Jekyll pluging allows a tag that takes a URL and generates a html snippet to embed the element into your site<br><br><a href="https://rubygems.org/gems/jekyll-embeds"><img src="https://badge.fury.io/rb/jekyll-embeds.svg"/></a> <a href="/LICENSE"><img src="https://badges.frapsoft.com/os/mit/mit.svg?v=103"/></a><br>
 <a href="https://rubygems.org/gems/jekyll"><img src="https://img.shields.io/badge/jeykll-%5E3.8-orange.svg"/></a>
 <a href="https://rubygems.org/gems/rake"><img src="https://img.shields.io/badge/rake-%5E1.10-orange.svg"/></a>

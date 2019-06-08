@@ -83,15 +83,7 @@ class VimeoEmbed < Liquid::Tag
       if vimeo_url[/vimeo\.com\/([^\?]*)/]
         @vimeo_id = $1
       end
-      
-      tmpl_path = File.join Dir.pwd, "_includes", "vimeo.html"
-      if File.exist?(tmpl_path)
-        tmpl = File.read tmpl_path
-        site = context.registers[:site]
-        tmpl = (Liquid::Template.parse tmpl).render site.site_payload.merge!({"vimeo_id" => @vimeo_id})
-      else
-        %Q{<div class='embed-container'><iframe src="https://player.vimeo.com/video/#{ @vimeo_id }" frameborder="0" allowfullscreen="true" scrolling="no" height="390" width="640"></iframe></div>}
-      end
+        %Q{<div class='embed-container'><iframe src="https://player.vimeo.com/video/#{@vimeo_id}" frameborder="0" allowfullscreen="true" scrolling="no" height="390" width="640"></iframe></div>}
     end
   
     Liquid::Template.register_tag "vimeo", self
@@ -108,8 +100,32 @@ class SoundCloudEmbed < Liquid::Tag
   end
 
   def render(context)
-    %Q{<div class="embed-container"><iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\"  src=\"//w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/#{@items[:id]}&color=%23#{@items[:color]}&auto_play=#{@items[:aplay]}&hide_related=true&show_comments=false&show_reposts=false&show_teaser=false\"></iframe></div>}
+    %Q{<div class="embed-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="//w.soundcloud.com/player/?url=//api.soundcloud.com/tracks/#{@items[:id]}&color=%23#{@items[:color]}&auto_play=#{@items[:aplay]}&hide_related=true&show_comments=false&show_reposts=false&show_teaser=false"></iframe></div>}
   end
 
   Liquid::Template.register_tag "soundcloud", self
+end
+
+
+
+class SpotifyEmbed < Liquid::Tag
+
+  def initialize(tag_name, markup, tokens)
+    super
+    params = Shellwords.shellwords markup
+    @items = { :url => params[0] }
+  end
+
+  def render(context)
+    spotify_url = "#{@items[:url].strip}"
+
+    if spotify_url[/open\.spotify\.com\/((embed\/?)?)([^\?]*)/]
+      @spotify_id = $3
+    else
+      @spotify_id = "track/#{@items[:url]}"
+    end
+    %Q{<div class="embed-container"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="//embed.spotify.com/?uri=#{@spotify_id}"></iframe></div>}
+  end
+
+  Liquid::Template.register_tag "spotify", self
 end

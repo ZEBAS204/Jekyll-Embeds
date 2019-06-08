@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-embeds"
-  spec.version       = "0.0.7"
+  spec.version       = "0.0.8"
   spec.authors       = ["SEBAS204"]
 
   spec.summary       = %q{Jekyll plugin for embedding diferent media elements.}
-  spec.description   = %q{Jekyll plugin to generate html snippets for embedding Youtube; VIMEO; Twitch channels, videos & clips; SoundCloud.}
+  spec.description   = %q{Jekyll plugin to generate html snippets for embedding Youtube; VIMEO; Twitch channels, videos & clips; SoundCloud; Spotify.}
   spec.homepage      = "https://github.com/ZEBAS204/Jekyll-Embeds"
   spec.license       = "MIT"
 

@@ -58,6 +58,14 @@ Type => channel(def), video, clip
 {% soundcloud [id] [color] [bool] %}
 Color => HEX without the '#'
 
+# Spotify
+{% spotify [id/url] %}
+id => spotify:track:7HOgPR1oVFyq9SwJrniXbR
+                    ^     ONLY THIS      ^
+url => Support:
+    * //open.spotify.com/album/
+    * //open.spotify.com/embed/track/
+
 ```
 
 **I recommend puts in your css the following, this will make the look much better**
